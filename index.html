@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sudarasan &amp; Maheswari — Wedding Reception</title>
+        <meta
+            name="description"
+            content="You are cordially invited to the Wedding Reception of Sudarasan &amp; Maheswari on 17 May 2026 at SSR Mahal, Komarapalayam."
+        />
+        <meta name="theme-color" content="#0a0e1a" />
+
+        <!-- ── Google Fonts ── -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Dancing+Script:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- ── Modular Stylesheets (order matters) ── -->
+        <link rel="stylesheet" href="css/variables.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/animations.css" />
+        <link rel="stylesheet" href="css/components.css" />
+        <link rel="stylesheet" href="css/sections.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+    <body>
+        <!-- ══════════════════════════════════════════
+       PARTICLE CANVAS  (fixed, z-index: 0)
+       ══════════════════════════════════════════ -->
+        <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+        <!-- ══════════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════════ -->
+        <nav
+            id="main-nav"
+            class="nav"
+            role="navigation"
+            aria-label="Main navigation"
+        >
+            <a
+                class="nav__brand magnetic"
+                href="#hero"
+                aria-label="Home — Sudarasan &amp; Maheswari"
+                >S &amp; M</a
+            >
+
+            <!-- <ul class="nav__links" id="nav-links" role="list">
+                <li><a class="nav__link" href="#reception">Reception</a></li>
+                <li><a class="nav__link" href="#gallery">Gallery</a></li>
+                <li><a class="nav__link" href="#friends">Friends</a></li>
+                <li><a class="nav__link" href="#family">Family</a></li>
+                <li><a class="nav__link" href="#venue">Venue</a></li>
+            </ul> -->
+        </nav>
+
+        <!-- ══════════════════════════════════════════
+       HERO
+       ══════════════════════════════════════════ -->
+        <section id="hero" class="hero--cinematic" aria-labelledby="hero-title">
+            <!-- Fullscreen Background with Ken Burns -->
+            <div class="hero__bg">
+                <img
+                    class="hero__bg-img"
+                    src="images/ring2.jpg"
+                    alt="Sudarasan and Maheswari - Wedding Moment"
+                />
+                <div class="hero__overlay"></div>
+            </div>
+
+            <!-- Floating visual embellishments -->
+            <div class="hero__visuals" aria-hidden="true">
+                <span class="hero__symbol" style="--sp-top: 18%; --sp-left: 12%; --sp-delay: 0s;">✨</span>
+                <span class="hero__symbol" style="--sp-top: 28%; --sp-left: 86%; --sp-delay: 1.5s;">💍</span>
+                <span class="hero__symbol" style="--sp-top: 72%; --sp-left: 15%; --sp-delay: 3s;">❤️</span>
+                <span class="hero__symbol" style="--sp-top: 68%; --sp-left: 85%; --sp-delay: 4.5s;">✿</span>
+            </div>
+
+            <!-- Content Area -->
+            <div class="hero__content">
+                <div class="hero__header">
+                    <p class="hero__subtitle anim-fade-up-1">A CELEBRATION OF LOVE</p>
+                    <h1 id="hero-title" class="hero__names anim-fade-up-2">
+                        <span class="name shimmer-text text-reveal">Sudarasan</span>
+                        <span class="ampersand">&amp;</span>
+                        <span class="name shimmer-text text-reveal">Maheswari</span>
+                    </h1>
+                </div>
+
+                <div class="hero__middle anim-fade-up-3">
+                    <!-- Live countdown -->
+                    <div
+                        class="hero__countdown"
+                        role="timer"
+                        aria-live="off"
+                        aria-label="Countdown to the reception"
+                    >
+                        <p class="hero__countdown-title">
+                            Counting down to the celebration
+                        </p>
+                        <div class="hero__countdown-grid">
+                            <div class="count-unit">
+                                <div class="count-box" id="cd-days">--</div>
+                                <span class="count-label">Days</span>
+                            </div>
+                            <div class="count-unit">
+                                <div class="count-box" id="cd-hours">--</div>
+                                <span class="count-label">Hours</span>
+                            </div>
+                            <div class="count-unit">
+                                <div class="count-box" id="cd-mins">--</div>
+                                <span class="count-label">Mins</span>
+                            </div>
+                            <div class="count-unit">
+                                <div class="count-box" id="cd-secs">--</div>
+                                <span class="count-label">Secs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__footer anim-fade-up-4">
+                    <div class="hero__actions">
+                        <div class="hero__badge">
+                            <span class="hero__badge-dot"></span>
+                            17 May 2026 · SSR Mahal
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="lux-divider reveal" aria-hidden="true"></div>
+
+        <section id="our-story" aria-labelledby="story-heading">
+            <!-- Background Decoration for sections -->
+            <div class="particles-container" aria-hidden="true"></div>
+
+            <div class="story__wrap" role="region">
+                <p class="section-label reveal">Our Story</p>
+                <h2 id="story-heading" class="section-title reveal text-reveal">
+                    How It All <em>Began</em>
+                </h2>
+
+                <div class="story__content">
+                    <blockquote class="story__tamil reveal fade">
+                        <p>"Arugil vegu dhinam irundhirpom…<br />
+                        Ariyaamal sendriruppom…<br />
+                        Vizhi thulaithadhai vidhi koduthu naam…<br />
+                        Viral arugile adhai niruthalam…"</p>
+                    </blockquote>
+
+                    <div class="story__chapters">
+                        <div class="story__chapter reveal">
+                            <span class="story__icon" aria-hidden="true">🏫</span>
+                            <p>Same school… but different classrooms,<br />
+                            Same place… but different stories.</p>
+                        </div>
+
+                        <div class="story__chapter reveal">
+                            <span class="story__icon" aria-hidden="true">🤫</span>
+                            <p>Oru pakkam <span class="highlight">silent crush</span>…<br />
+                            Inoru pakkam total unawareness</p>
+                        </div>
+
+                        <div class="story__chapter reveal">
+                            <span class="story__icon" aria-hidden="true">🤝</span>
+                            <p>Time passed… paths changed…<br />
+                            Oru naal, through a common friend, we finally met.</p>
+                        </div>
+
+                        <div class="story__chapter reveal">
+                            <span class="story__icon" aria-hidden="true">💕</span>
+                            <p>What started as a simple friendship,<br />
+                            slowly turned into something meaningful…<br />
+                            Then again, life paused us for a while.</p>
+                        </div>
+
+                        <div class="story__chapter reveal">
+                            <span class="story__icon" aria-hidden="true">✨</span>
+                            <p>But some stories don't end that easily.</p>
+                        </div>
+
+                        <div class="story__chapter reveal">
+                            <span class="story__icon" aria-hidden="true">❤️</span>
+                            <p>Years later, we met again…<br />
+                            This time, with clarity, courage, and feelings that stayed.<br />
+                            She expressed her heart<br />
+                            He took his time…<br />
+                            And finally, a <span class="highlight">"YES"</span> that mattered — on her birthday, <span class="highlight">2023</span></p>
+                        </div>
+
+                        <div class="story__chapter reveal">
+                            <span class="story__icon" aria-hidden="true">😄</span>
+                            <p>Since then — memories, small fights, lots of laughter,<br />
+                            and a journey that brought us here today…</p>
+                        </div>
+                    </div>
+
+                    <p class="story__closing reveal fade">
+                        Turning our long story into a <span class="highlight">lifetime journey</span> 💫
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="lux-divider reveal" aria-hidden="true"></div>
+
+        <!-- ══════════════════════════════════════════
+       OUR FAMILIES (Relocated below Quote)
+       ══════════════════════════════════════════ -->
+        <section id="our-families" aria-labelledby="family-heading">
+            <div class="section-inner">
+                <p class="section-label reveal">Our Families</p>
+                <h2 id="family-heading" class="section-title reveal text-reveal">
+                    Two Families, <em>One Heart</em>
+                </h2>
+                <p class="section-sub reveal">
+                    With the blessings of our beloved families
+                </p>
+
+                <div class="family__layout">
+                    <!-- ── Groom's side ── -->
+                    <div
+                        class="family__side reveal left"
+                        aria-label="Groom's family"
+                    >
+                        <div
+                            class="family__parents"
+                            role="list"
+                            aria-label="Groom's parents"
+                        >
+                            <div
+                                class="family__parent-card"
+                                role="listitem"
+                                data-ripple
+                            >
+                                <p class="family__parent-role">Father</p>
+                                <p class="family__parent-name">Muruganatham</p>
+                            </div>
+                            <div
+                                class="family__parent-card"
+                                role="listitem"
+                                data-ripple
+                            >
+                                <p class="family__parent-role">Mother</p>
+                                <p class="family__parent-name">Pushpa</p>
+                            </div>
+                        </div>
+
+                        <div class="family__connector" aria-hidden="true">
+                            <div class="family__connector-line"></div>
+                            <div class="family__connector-arrow"></div>
+                        </div>
+
+                        <div class="family__name-card">
+                            <p class="family__name-card-role">Groom</p>
+                            <p class="family__name-card-name shimmer-text text-reveal">
+                                Sudarasan
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ── Centre — union symbol ── -->
+                    <div class="family__center reveal fade" aria-hidden="true">
+                        <div class="family__heart-icon heartbeat">💍</div>
+                        <p class="family__center-label">United<br />in Love</p>
+                    </div>
+
+                    <!-- ── Bride's side ── -->
+                    <div
+                        class="family__side reveal right"
+                        aria-label="Bride's family"
+                    >
+                        <div
+                            class="family__parents"
+                            role="list"
+                            aria-label="Bride's parents"
+                        >
+                            <div
+                                class="family__parent-card"
+                                role="listitem"
+                                data-ripple
+                            >
+                                <p class="family__parent-role">Father</p>
+                                <p class="family__parent-name">Subramani</p>
+                            </div>
+                            <div
+                                class="family__parent-card"
+                                role="listitem"
+                                data-ripple
+                            >
+                                <p class="family__parent-role">Mother</p>
+                                <p class="family__parent-name">Nirmala</p>
+                            </div>
+                        </div>
+
+                        <div class="family__connector" aria-hidden="true">
+                            <div class="family__connector-line"></div>
+                            <div class="family__connector-arrow"></div>
+                        </div>
+
+                        <div class="family__name-card">
+                            <p class="family__name-card-role">Bride</p>
+                            <p class="family__name-card-name shimmer-text text-reveal">
+                                Maheswari
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+       RECEPTION DETAILS
+       ══════════════════════════════════════════ -->
+        <section id="reception" aria-labelledby="reception-heading">
+            <div class="section-inner">
+                <p class="section-label reveal">Reception Details</p>
+                <h2 id="reception-heading" class="section-title reveal text-reveal">
+                    Join Us to <em>Celebrate</em>
+                </h2>
+                <p class="section-sub reveal">
+                    We joyfully invite you to share in our happiness
+                </p>
+
+                <!-- Elegant Timeline Layout -->
+                <div class="reception__timeline">
+                    <!-- Date -->
+                    <div class="timeline__item reveal left" data-reveal-delay="1">
+                        <div class="timeline__icon reveal scale-up" data-reveal-delay="3" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__label">The Date</h3>
+                            <p class="timeline__value">Sunday, 17 May 2026</p>
+                        </div>
+                    </div>
+
+                    <!-- Time -->
+                    <div class="timeline__item reveal right" data-reveal-delay="2">
+                        <div class="timeline__icon reveal scale-up" data-reveal-delay="4" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 12"/></svg>
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__label">The Time</h3>
+                            <p class="timeline__value">6:00 PM Onwards</p>
+                        </div>
+                    </div>
+
+                    <!-- Venue -->
+                    <div class="timeline__item reveal left" data-reveal-delay="3">
+                        <div class="timeline__icon reveal scale-up" data-reveal-delay="5" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__label">The Venue</h3>
+                            <p class="timeline__value">SSR Mahal, Komarapalayam</p>
+                            <a href="#venue" class="timeline__link">View Location →</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.details-grid -->
+
+
+            </div>
+            <!-- /.section-inner -->
+        </section>
+
+        <div class="lux-divider reveal" aria-hidden="true"></div>
+
+        <!-- ══════════════════════════════════════════
+       GALLERY
+       ══════════════════════════════════════════ -->
+        <section id="gallery" aria-labelledby="gallery-heading">
+            <div class="section-inner">
+                <p class="section-label reveal">Our Moments</p>
+                <h2 id="gallery-heading" class="section-title reveal text-reveal">
+                    A <em>Journey</em> in Frames
+                </h2>
+                <p class="section-sub reveal">
+                    Precious memories from our special day
+                </p>
+
+                <div class="gallery__grid reveal fade" role="list">
+                    <!-- Item 2 — rings in palm -->
+                    <figure
+                        class="gallery__item magnetic"
+                        role="listitem"
+                        data-lightbox="images/ring1.jpg"
+                        data-lightbox-alt="Wedding rings held in the bride's palm"
+                        data-lightbox-caption="The Rings"
+                        tabindex="0"
+                        aria-label="Open photo: The Rings"
+                    >
+                        <img
+                            src="images/ring1.jpg"
+                            alt="Two gold wedding rings resting on the bride's henna-adorned palm"
+                            loading="lazy"
+                        />
+                        <figcaption class="gallery__overlay" aria-hidden="true">
+                            <span class="gallery__caption">The Rings</span>
+                        </figcaption>
+                        <div class="gallery__frame" aria-hidden="true"></div>
+                    </figure>
+                    <!-- Item 1 — couple photo (spans 2 rows on desktop) -->
+                    <figure
+                        class="gallery__item magnetic"
+                        role="listitem"
+                        data-lightbox="images/couple.jpg"
+                        data-lightbox-alt="Sudarasan and Maheswari together"
+                        data-lightbox-caption="Together Forever"
+                        tabindex="0"
+                        aria-label="Open photo: Together Forever"
+                    >
+                        <img
+                            src="images/couple.jpg"
+                            alt="Sudarasan and Maheswari dressed in traditional wedding attire"
+                            loading="lazy"
+                        />
+                        <figcaption class="gallery__overlay" aria-hidden="true">
+                            <span class="gallery__caption"
+                                >Together Forever</span
+                            >
+                        </figcaption>
+                        <div class="gallery__frame" aria-hidden="true"></div>
+                    </figure>
+
+                    <!-- Item 3 — ring exchange -->
+                    <figure
+                        class="gallery__item magnetic"
+                        role="listitem"
+                        data-lightbox="images/ring2.jpg"
+                        data-lightbox-alt="Bride and groom exchanging wedding rings"
+                        data-lightbox-caption="Sealed with Love"
+                        tabindex="0"
+                        aria-label="Open photo: Sealed with Love"
+                    >
+                        <img
+                            src="images/ring2.jpg"
+                            alt="The couple's hands as they exchange gold wedding rings"
+                            loading="lazy"
+                        />
+                        <figcaption class="gallery__overlay" aria-hidden="true">
+                            <span class="gallery__caption"
+                                >Sealed with Love</span
+                            >
+                        </figcaption>
+                        <div class="gallery__frame" aria-hidden="true"></div>
+                    </figure>
+                </div>
+                <!-- /.gallery__grid -->
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+       FRIENDS — MEMORY TREE
+       ══════════════════════════════════════════ -->
+        <section id="friends" aria-labelledby="friends-heading">
+            <div class="section-inner">
+                <p class="section-label reveal">Our People</p>
+                <h2 id="friends-heading" class="section-title reveal">
+                    Hanging <em>Memories</em>
+                </h2>
+                <p class="section-sub reveal">
+                    Those who made every moment unforgettable
+                </p>
+
+                <div class="mem-tree" id="mem-tree">
+                    <!-- Leaf particles injected by JS -->
+                    <div
+                        class="mem-leaves"
+                        id="tree-leaves"
+                        aria-hidden="true"
+                    ></div>
+
+                    <!-- ── Row 1 (top, wide) ── -->
+                    <div class="mem-row">
+                        <div class="mem-side mem-side--left">
+                            <div
+                                class="mem-hanger"
+                                style="
+                                    --rot: -5deg;
+                                    --string-h: 58px;
+                                    --swing-dur: 4.2s;
+                                    --swing-delay: 0s;
+                                    --drop-delay: 0.1s;
+                                "
+                            >
+                                <div class="mem-string"></div>
+                                <figure
+                                    class="mem-photo"
+                                    data-lightbox="images/friends1.jpg"
+                                    data-lightbox-alt="Friend photo"
+                                    data-lightbox-caption="Friend"
+                                    tabindex="0"
+                                    aria-label="Open photo"
+                                >
+                                    <div class="mem-photo-img">
+                                        <img
+                                            src="images/friends1.jpg"
+                                            alt="Friend 1"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <figcaption class="mem-caption">
+                                        Friend
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div
+                                class="mem-hanger"
+                                style="
+                                    --rot: 3deg;
+                                    --string-h: 76px;
+                                    --swing-dur: 3.8s;
+                                    --swing-delay: 0.5s;
+                                    --drop-delay: 0.3s;
+                                "
+                            >
+                                <div class="mem-string"></div>
+                                <figure
+                                    class="mem-photo"
+                                    data-lightbox="images/friends2.jpg"
+                                    data-lightbox-alt="Friend photo"
+                                    data-lightbox-caption="Friend"
+                                    tabindex="0"
+                                    aria-label="Open photo"
+                                >
+                                    <div class="mem-photo-img">
+                                        <img
+                                            src="images/friends2.jpg"
+                                            alt="Friend 2"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <figcaption class="mem-caption">
+                                        Friend
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="mem-trunk-dot" aria-hidden="true"></div>
+                        <div class="mem-side mem-side--right">
+                            <div
+                                class="mem-hanger"
+                                style="
+                                    --rot: -2deg;
+                                    --string-h: 70px;
+                                    --swing-dur: 4.6s;
+                                    --swing-delay: 0.3s;
+                                    --drop-delay: 0.5s;
+                                "
+                            >
+                                <div class="mem-string"></div>
+                                <figure
+                                    class="mem-photo"
+                                    data-lightbox="images/friends3.jpg"
+                                    data-lightbox-alt="Friend photo"
+                                    data-lightbox-caption="Friend"
+                                    tabindex="0"
+                                    aria-label="Open photo"
+                                >
+                                    <div class="mem-photo-img">
+                                        <img
+                                            src="images/friends3.jpg"
+                                            alt="Friend 3"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <figcaption class="mem-caption">
+                                        Friend
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div
+                                class="mem-hanger"
+                                style="
+                                    --rot: 6deg;
+                                    --string-h: 52px;
+                                    --swing-dur: 3.9s;
+                                    --swing-delay: 0.8s;
+                                    --drop-delay: 0.7s;
+                                "
+                            >
+                                <div class="mem-string"></div>
+                                <figure
+                                    class="mem-photo"
+                                    data-lightbox="images/friends4.jpg"
+                                    data-lightbox-alt="Friend photo"
+                                    data-lightbox-caption="Friend"
+                                    tabindex="0"
+                                    aria-label="Open photo"
+                                >
+                                    <div class="mem-photo-img">
+                                        <img
+                                            src="images/friends4.jpg"
+                                            alt="Friend 4"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <figcaption class="mem-caption">
+                                        Friend
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /row 1 -->
+
+                    <div class="mem-trunk-seg" aria-hidden="true"></div>
+
+                    <!-- ── Row 2 (middle) ── -->
+                    <div class="mem-row">
+                        <div class="mem-side mem-side--left">
+                            <div
+                                class="mem-hanger"
+                                style="
+                                    --rot: 4deg;
+                                    --string-h: 64px;
+                                    --swing-dur: 4.9s;
+                                    --swing-delay: 0.2s;
+                                    --drop-delay: 0.9s;
+                                "
+                            >
+                                <div class="mem-string"></div>
+                                <figure
+                                    class="mem-photo"
+                                    data-lightbox="images/friends5.jpg"
+                                    data-lightbox-alt="Friend photo"
+                                    data-lightbox-caption="Friend"
+                                    tabindex="0"
+                                    aria-label="Open photo"
+                                >
+                                    <div class="mem-photo-img">
+                                        <img
+                                            src="images/friends5.jpg"
+                                            alt="Friend 5"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <figcaption class="mem-caption">
+                                        Friend
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div
+                                class="mem-hanger"
+                                style="
+                                    --rot: -7deg;
+                                    --string-h: 84px;
+                                    --swing-dur: 3.5s;
+                                    --swing-delay: 1s;
+                                    --drop-delay: 1.1s;
+                                "
+                            >
+                                <div class="mem-string"></div>
+                                <figure
+                                    class="mem-photo"
+                                    data-lightbox="images/friends6.jpg"
+                                    data-lightbox-alt="Friend photo"
+                                    data-lightbox-caption="Friend"
+                                    tabindex="0"
+                                    aria-label="Open photo"
+                                >
+                                    <div class="mem-photo-img">
+                                        <img
+                                            src="images/friends6.jpg"
+                                            alt="Friend 6"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <figcaption class="mem-caption">
+                                        Friend
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="mem-trunk-dot" aria-hidden="true"></div>
+                        <div class="mem-side mem-side--right">
+                            <div
+                                class="mem-hanger"
+                                style="
+                                    --rot: -3deg;
+                                    --string-h: 68px;
+                                    --swing-dur: 4.2s;
+                                    --swing-delay: 0.6s;
+                                    --drop-delay: 1.3s;
+                                "
+                            >
+                                <div class="mem-string"></div>
+                                <figure
+                                    class="mem-photo"
+                                    data-lightbox="images/friends7.jpg"
+                                    data-lightbox-alt="Friend photo"
+                                    data-lightbox-caption="Friend"
+                                    tabindex="0"
+                                    aria-label="Open photo"
+                                >
+                                    <div class="mem-photo-img">
+                                        <img
+                                            src="images/friends7.jpg"
+                                            alt="Friend 7"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <figcaption class="mem-caption">
+                                        Friend
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div
+                                class="mem-hanger"
+                                style="
+                                    --rot: 5deg;
+                                    --string-h: 56px;
+                                    --swing-dur: 4.5s;
+                                    --swing-delay: 1.3s;
+                                    --drop-delay: 1.5s;
+                                "
+                            >
+                                <div class="mem-string"></div>
+                                <figure
+                                    class="mem-photo"
+                                    data-lightbox="images/friends8.jpg"
+                                    data-lightbox-alt="Friend photo"
+                                    data-lightbox-caption="Friend"
+                                    tabindex="0"
+                                    aria-label="Open photo"
+                                >
+                                    <div class="mem-photo-img">
+                                        <img
+                                            src="images/friends8.jpg"
+                                            alt="Friend 8"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <figcaption class="mem-caption">
+                                        Friend
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /row 2 -->
+
+                    <div class="mem-trunk-seg" aria-hidden="true"></div>
+
+                    <!-- ── Row 3 (bottom, narrower) ── -->
+                    <div class="mem-row mem-row--narrow">
+                        <div class="mem-side mem-side--left">
+                            <div
+                                class="mem-hanger"
+                                style="
+                                    --rot: -4deg;
+                                    --string-h: 52px;
+                                    --swing-dur: 3.7s;
+                                    --swing-delay: 0.4s;
+                                    --drop-delay: 1.7s;
+                                "
+                            >
+                                <div class="mem-string"></div>
+                                <figure
+                                    class="mem-photo"
+                                    data-lightbox="images/friends9.jpg"
+                                    data-lightbox-alt="Friend photo"
+                                    data-lightbox-caption="Friend"
+                                    tabindex="0"
+                                    aria-label="Open photo"
+                                >
+                                    <div class="mem-photo-img">
+                                        <img
+                                            src="images/friends9.jpg"
+                                            alt="Friend 9"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <figcaption class="mem-caption">
+                                        Friend
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="mem-trunk-dot" aria-hidden="true"></div>
+                        <div class="mem-side mem-side--right">
+                            <div
+                                class="mem-hanger"
+                                style="
+                                    --rot: 2deg;
+                                    --string-h: 62px;
+                                    --swing-dur: 4.3s;
+                                    --swing-delay: 1.1s;
+                                    --drop-delay: 1.9s;
+                                "
+                            >
+                                <div class="mem-string"></div>
+                                <figure
+                                    class="mem-photo"
+                                    data-lightbox="images/friends10.jpg"
+                                    data-lightbox-alt="Friend photo"
+                                    data-lightbox-caption="Friend"
+                                    tabindex="0"
+                                    aria-label="Open photo"
+                                >
+                                    <div class="mem-photo-img">
+                                        <img
+                                            src="images/friends10.jpg"
+                                            alt="Friend 10"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <figcaption class="mem-caption">
+                                        Friend
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /row 3 -->
+
+                    <!-- Tree base -->
+                    <div
+                        class="mem-trunk-seg mem-trunk-seg--base"
+                        aria-hidden="true"
+                    ></div>
+                    <div class="mem-base" aria-hidden="true"></div>
+                </div>
+                <!-- /.mem-tree -->
+            </div>
+        </section>
+
+
+
+        <!-- ══════════════════════════════════════════
+       VENUE
+       ══════════════════════════════════════════ -->
+        <section id="venue" aria-labelledby="venue-heading">
+            <div class="section-inner">
+                <p class="section-label reveal">Find Us</p>
+                <h2 id="venue-heading" class="section-title reveal">
+                    The <em>Venue</em>
+                </h2>
+
+                <div class="venue__layout">
+                    <!-- Info column -->
+                    <address
+                        class="venue__info reveal left"
+                        style="font-style: normal"
+                    >
+                        <h3 class="venue__name">SSR Mahal</h3>
+                        <p class="venue__place">Komarapalayam, Tamil Nadu</p>
+
+                        <div class="venue__detail-row">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect
+                                    x="3"
+                                    y="4"
+                                    width="18"
+                                    height="18"
+                                    rx="2"
+                                />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                            <span>Sunday, 17 May 2026</span>
+                        </div>
+
+                        <div class="venue__detail-row">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" />
+                                <polyline points="12 7 12 12 15.5 12" />
+                            </svg>
+                            <span>6:00 PM onwards</span>
+                        </div>
+
+                        <div class="venue__detail-row">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                                />
+                                <circle cx="12" cy="9" r="2.5" />
+                            </svg>
+                            <span
+                                >SSR Mahal, Komarapalayam,<br />Namakkal
+                                District, Tamil Nadu</span
+                            >
+                        </div>
+
+                        <a
+                            class="venue__btn"
+                            href="https://maps.app.goo.gl/adrQSAvsvemAQUZp6"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Open SSR Mahal in Google Maps"
+                        >
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                                />
+                                <circle cx="12" cy="9" r="2.5" />
+                            </svg>
+                            Get Directions
+                        </a>
+                    </address>
+
+                    <!-- Map column -->
+                    <div class="venue__map reveal right">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4942.250184515892!2d77.6912427234613!3d11.430557457788815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba969006910934d%3A0x6189557bdd5a16d9!2sSSR%20MAHAL!5e1!3m2!1sen!2sin!4v1774679863918!5m2!1sen!2sin"
+                            title="SSR Mahal location on Google Maps"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                </div>
+                <!-- /.venue__layout -->
+            </div>
+        </section>
+
+
+        <!-- ══════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════ -->
+        <footer role="contentinfo">
+            <p class="footer__names shimmer-text">Sudarasan &amp; Maheswari</p>
+            <p class="footer__date">
+                17 · 05 · 2026 &nbsp;|&nbsp; SSR Mahal, Komarapalayam
+            </p>
+            <span class="footer__icon heartbeat" aria-hidden="true">💛</span>
+            <p class="footer__copy">
+                With love &amp; joy — Forever &amp; Always
+            </p>
+        </footer>
+
+        <!-- ══════════════════════════════════════════
+       SCRIPTS  (load order: deps → entry point)
+       ══════════════════════════════════════════ -->
+        <script src="js/ParticleSystemLite.js"></script>
+        <script src="js/ParticleSystem.js"></script>
+        <script src="js/Countdown.js"></script>
+        <script src="js/ScrollReveal.js"></script>
+        <script src="js/Lightbox.js"></script>
+        <script src="js/Effects.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

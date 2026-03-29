@@ -1,0 +1,190 @@
+/* ============================================================
+   base.css — Reset, Body, Scrollbar & Layout Helpers
+   Sudarasan & Maheswari Wedding Invitation
+   ============================================================ */
+
+/* ── Reset ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── Root ── */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ── Body ── */
+body {
+  background: var(--clr-navy);
+  color: var(--clr-cream);
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Element Resets ── */
+img, video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* ── Custom Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--clr-navy);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--clr-gold);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-gold-light);
+}
+
+/* ── Section Base ── */
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Layout Container ── */
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--section-py) var(--section-px);
+}
+
+.section-inner--narrow {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--section-py) var(--section-px);
+}
+
+/* ── Grid Utilities ── */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-lg);
+}
+
+/* ── Flex Utilities ── */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ── Spacing Utilities ── */
+.mt-sm  { margin-top: var(--space-sm); }
+.mt-md  { margin-top: var(--space-md); }
+.mt-lg  { margin-top: var(--space-lg); }
+.mt-xl  { margin-top: var(--space-xl); }
+.mt-2xl { margin-top: var(--space-2xl); }
+
+.mb-sm  { margin-bottom: var(--space-sm); }
+.mb-md  { margin-bottom: var(--space-md); }
+.mb-lg  { margin-bottom: var(--space-lg); }
+.mb-xl  { margin-bottom: var(--space-xl); }
+.mb-2xl { margin-bottom: var(--space-2xl); }
+
+/* ── Text Utilities ── */
+.text-center  { text-align: center; }
+.text-left    { text-align: left; }
+.text-right   { text-align: right; }
+
+.text-gold    { color: var(--clr-gold); }
+.text-cream   { color: var(--clr-cream); }
+.text-muted   { color: rgba(255,255,255,0.45); }
+.text-white   { color: var(--clr-white); }
+.text-rose    { color: var(--clr-rose); }
+
+.text-serif   { font-family: var(--ff-serif); }
+.text-script  { font-family: var(--ff-script); }
+
+.text-xs   { font-size: 0.72rem; }
+.text-sm   { font-size: 0.85rem; }
+.text-base { font-size: 1rem; }
+.text-lg   { font-size: 1.25rem; }
+.text-xl   { font-size: 1.5rem; }
+.text-2xl  { font-size: 2rem; }
+
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.text-italic { font-style: italic; }
+.fw-light    { font-weight: var(--fw-light); }
+.fw-regular  { font-weight: var(--fw-regular); }
+.fw-semi     { font-weight: var(--fw-semi); }
+
+/* ── Visibility ── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Selection ── */
+::selection {
+  background: rgba(212,175,55,0.25);
+  color: var(--clr-white);
+}

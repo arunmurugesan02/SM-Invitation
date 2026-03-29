@@ -1,0 +1,114 @@
+/* ============================================================
+   variables.css — Design Tokens
+   All CSS custom properties for the wedding invitation site.
+   Change values here to retheme the entire site instantly.
+   ============================================================ */
+
+:root {
+
+  /* ── Color Palette ─────────────────────────────────────── */
+  --clr-gold:          #d4af37;
+  --clr-gold-light:    #f0d060;
+  --clr-gold-pale:     #f5e6a0;
+  --clr-rose:          #c9a0a8;
+  --clr-rose-light:    #e8c0c8;
+  --clr-navy:          #0a0e1a;
+  --clr-navy-2:        #111830;
+  --clr-navy-3:        #1a2340;
+  --clr-cream:         #f8f2e8;
+  --clr-white:         #ffffff;
+  --clr-text-muted:    rgba(255, 255, 255, 0.50);
+  --clr-text-subtle:   rgba(255, 255, 255, 0.35);
+
+  /* ── Glassmorphism Surfaces ─────────────────────────────── */
+  --glass:             rgba(255, 255, 255, 0.06);
+  --glass-hover:       rgba(255, 255, 255, 0.12);
+  --glass-border:      rgba(255, 255, 255, 0.08);
+
+  /* ── Gold Tints ─────────────────────────────────────────── */
+  --gold-border:       rgba(212, 175, 55, 0.20);
+  --gold-border-hover: rgba(212, 175, 55, 0.45);
+  --gold-bg:           rgba(212, 175, 55, 0.10);
+  --gold-bg-hover:     rgba(212, 175, 55, 0.20);
+  --gold-glow:         rgba(212, 175, 55, 0.15);
+  --gold-top-line:     linear-gradient(to right, transparent, var(--clr-gold), transparent);
+
+  /* ── Typography ─────────────────────────────────────────── */
+  --ff-serif:    'Cormorant Garamond', serif;
+  --ff-sans:     'DM Sans', sans-serif;
+  --ff-script:   'Dancing Script', cursive;
+
+  --fw-light:    300;
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semi:     600;
+
+  /* ── Fluid Font Sizes ───────────────────────────────────── */
+  --fs-xs:       0.65rem;
+  --fs-sm:       0.78rem;
+  --fs-base:     0.9rem;
+  --fs-md:       1rem;
+  --fs-lg:       1.2rem;
+  --fs-xl:       1.6rem;
+  --fs-2xl:      2rem;
+  --fs-3xl:      clamp(2rem,   4vw, 3.2rem);
+  --fs-4xl:      clamp(3rem,   6vw, 5.5rem);
+  --fs-hero:     clamp(3rem,   6vw, 5.5rem);
+
+  /* ── Letter Spacing ─────────────────────────────────────── */
+  --ls-tight:    0.02em;
+  --ls-base:     0.05em;
+  --ls-wide:     0.12em;
+  --ls-wider:    0.20em;
+  --ls-widest:   0.35em;
+
+  /* ── Spacing Scale ──────────────────────────────────────── */
+  --sp-2xs:      0.25rem;   /*  4px */
+  --sp-xs:       0.5rem;    /*  8px */
+  --sp-sm:       0.75rem;   /* 12px */
+  --sp-md:       1rem;      /* 16px */
+  --sp-lg:       1.5rem;    /* 24px */
+  --sp-xl:       2rem;      /* 32px */
+  --sp-2xl:      3rem;      /* 48px */
+  --sp-3xl:      4rem;      /* 64px */
+  --sp-4xl:      5rem;      /* 80px */
+  --sp-5xl:      7rem;      /* 112px */
+
+  /* ── Section Layout ─────────────────────────────────────── */
+  --section-py:  5rem;
+  --section-px:  2rem;
+  --max-width:   1100px;
+
+  /* ── Border Radii ───────────────────────────────────────── */
+  --radius-xs:   4px;
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-pill: 50px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ────────────────────────────────────────────── */
+  --shadow-sm:   0 4px  16px rgba(0, 0, 0, 0.30);
+  --shadow-md:   0 8px  32px rgba(0, 0, 0, 0.40);
+  --shadow-lg:   0 20px 60px rgba(0, 0, 0, 0.50);
+  --shadow-gold: 0 12px 40px rgba(212, 175, 55, 0.15);
+
+  /* ── Z-Index Scale ──────────────────────────────────────── */
+  --z-canvas:    0;
+  --z-base:      1;
+  --z-nav:       100;
+  --z-lightbox:  999;
+
+  /* ── Transitions ────────────────────────────────────────── */
+  --tr-fast:     0.2s ease;
+  --tr-base:     0.3s ease;
+  --tr-slow:     0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --tr-reveal:   0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --tr-spring:   0.5s cubic-bezier(0.34, 1.56, 0.64, 1.00);
+
+  /* ── Blur ───────────────────────────────────────────────── */
+  --blur-sm:     blur(8px);
+  --blur-md:     blur(16px);
+  --blur-lg:     blur(24px);
+}
