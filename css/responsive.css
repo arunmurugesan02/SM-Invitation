@@ -497,6 +497,86 @@
 }
 
 /* ════════════════════════════════════════════════════════════
+   ANNANIN VILUTHUGAL TREE — tablet & mobile  (.vil-tree)
+   ════════════════════════════════════════════════════════════ */
+
+/* ── Tablet (≤ 900px) ── */
+@media (max-width: 900px) {
+    .vil-tree {
+        max-width: 600px;
+    }
+
+    .vil-frame {
+        width: 78px;
+    }
+
+    .vil-name {
+        font-size: 0.58rem;
+    }
+}
+
+/* ── Mobile (≤ 600px) ── */
+@media (max-width: 600px) {
+    .vil-tree {
+        max-width: 100%;
+        padding-inline: 0.25rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .vil-trunk-cap {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+
+    .vil-row {
+        justify-content: space-around;
+    }
+
+    .vil-frame {
+        width: 68px;
+        padding: 4px 4px 0;
+        border-radius: var(--radius-sm);
+    }
+
+    .vil-knot {
+        width: 9px;
+        height: 9px;
+    }
+
+    .vil-name {
+        font-size: 0.52rem;
+        letter-spacing: 0.06em;
+        padding-block: 0.35rem 0.42rem;
+    }
+
+    .vil-trunk-seg {
+        height: 32px;
+    }
+
+    .vil-trunk-base {
+        height: 36px;
+    }
+}
+
+/* ── Small phones (≤ 400px) ── */
+@media (max-width: 400px) {
+    .vil-frame {
+        width: 58px;
+    }
+
+    .vil-name {
+        font-size: 0.46rem;
+        letter-spacing: 0.04em;
+    }
+
+    .vil-cord-line {
+        /* Shorten cords proportionally on small phones */
+        height: calc(var(--cord, 60px) * 0.72) !important;
+    }
+}
+
+/* ════════════════════════════════════════════════════════════
    MEMORY TREE — tablet & mobile
    ════════════════════════════════════════════════════════════ */
 
