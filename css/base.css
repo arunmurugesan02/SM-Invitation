@@ -33,7 +33,7 @@ body {
 }
 
 /* ── Prevent section-level horizontal bleed (reveal animations) ── */
-section, .lux-divider {
+section {
   overflow-x: clip;
 }
 
