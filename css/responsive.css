@@ -98,16 +98,6 @@
         margin: -0.5rem 0;
     }
 
-    .hero__countdown {
-        background: rgba(10, 14, 26, 0.55);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(212, 175, 55, 0.2);
-        border-radius: 20px;
-        padding: 1.5rem 1.8rem;
-        margin: 0 auto;
-    }
-
     .hero__countdown-title {
         font-size: 0.6rem;
         margin-bottom: 1.2rem;
