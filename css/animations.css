@@ -133,6 +133,16 @@
   66%       { transform: translateY(5px) rotate(-1.5deg); }
 }
 
+/* ── Heart travels along infinity path ── */
+@keyframes heartAlongInfinity {
+  0%   { offset-distance: 0%;   transform: scale(1);    }
+  20%  { offset-distance: 20%;  transform: scale(1.35); }
+  40%  { offset-distance: 40%;  transform: scale(1);    }
+  60%  { offset-distance: 60%;  transform: scale(1.35); }
+  80%  { offset-distance: 80%;  transform: scale(1);    }
+  100% { offset-distance: 100%; transform: scale(1);    }
+}
+
 /* ─────────────────────────────────────────────
    UTILITY CLASSES
    ───────────────────────────────────────────── */
