@@ -111,18 +111,16 @@ class Countdown {
     if (this._prevValues[key] === newVal) return;
     this._prevValues[key] = newVal;
 
-    // Phase 1 — slide up & fade
+    // Phase 1 — slide up
     el.style.transition = 'none';
     el.style.transform  = 'translateY(-5px)';
-    el.style.opacity    = '0.4';
 
-    // Phase 2 — snap new value in, then slide down & fade in
+    // Phase 2 — snap new value in, then slide down
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         el.textContent = newVal;
-        el.style.transition = 'transform 0.28s ease, opacity 0.28s ease';
+        el.style.transition = 'transform 0.28s ease';
         el.style.transform  = 'translateY(0)';
-        el.style.opacity    = '1';
       });
     });
   }

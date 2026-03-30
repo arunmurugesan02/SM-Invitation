@@ -107,6 +107,12 @@
         gap: 0.5rem;
     }
 
+    .hero__countdown-grid .count-box {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
     .hero__footer {
         gap: 1.2rem;
     }
