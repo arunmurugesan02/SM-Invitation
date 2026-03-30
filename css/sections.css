@@ -902,17 +902,6 @@
         border-color var(--tr-base);
 }
 
-/* Horizontal midline detail */
-.count-box::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: rgba(212, 175, 55, 0.15);
-    pointer-events: none;
-}
 
 .count-box:hover {
     transform: scale(1.06);
@@ -1111,6 +1100,8 @@
     flex-direction: column;
     align-items: center;
     gap: var(--sp-xl);
+    position: relative;
+    z-index: 1;
 }
 
 /* Name card at top of each branch */
@@ -1223,6 +1214,10 @@
     gap: var(--sp-sm);
     padding-bottom: 1.5rem;
     align-self: end;
+    position: relative;
+    z-index: 2;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 .family__heart-icon {
