@@ -133,16 +133,15 @@
   66%       { transform: translateY(5px) rotate(-1.5deg); }
 }
 
-/* ── Heart travels along infinity path ── */
-/* Pulse peaks at 0 % and 50 % — the two crossover points where both hearts nearly meet */
+/* ── Hearts travel along infinity path ── */
 @keyframes heartAlongInfinity {
-  0%   { offset-distance: 0%;   transform: scale(1.45); filter: drop-shadow(0 0 8px rgba(232,25,60,1)); }
-  8%   { offset-distance: 8%;   transform: scale(1);    filter: drop-shadow(0 0 4px rgba(232,25,60,0.8)); }
-  48%  { offset-distance: 48%;  transform: scale(1);    filter: drop-shadow(0 0 4px rgba(232,25,60,0.8)); }
-  50%  { offset-distance: 50%;  transform: scale(1.45); filter: drop-shadow(0 0 8px rgba(232,25,60,1)); }
-  58%  { offset-distance: 58%;  transform: scale(1);    filter: drop-shadow(0 0 4px rgba(232,25,60,0.8)); }
-  98%  { offset-distance: 98%;  transform: scale(1);    filter: drop-shadow(0 0 4px rgba(232,25,60,0.8)); }
-  100% { offset-distance: 100%; transform: scale(1.45); filter: drop-shadow(0 0 8px rgba(232,25,60,1)); }
+  0%   { offset-distance: 0%;   transform: scale(1.5);  filter: drop-shadow(0 0 8px rgba(224,96,112,1)); }
+  10%  { offset-distance: 10%;  transform: scale(1);    filter: drop-shadow(0 0 4px rgba(224,96,112,0.7)); }
+  48%  { offset-distance: 48%;  transform: scale(1);    filter: drop-shadow(0 0 4px rgba(224,96,112,0.7)); }
+  50%  { offset-distance: 50%;  transform: scale(1.5);  filter: drop-shadow(0 0 8px rgba(224,96,112,1)); }
+  60%  { offset-distance: 60%;  transform: scale(1);    filter: drop-shadow(0 0 4px rgba(224,96,112,0.7)); }
+  98%  { offset-distance: 98%;  transform: scale(1);    filter: drop-shadow(0 0 4px rgba(224,96,112,0.7)); }
+  100% { offset-distance: 100%; transform: scale(1.5);  filter: drop-shadow(0 0 8px rgba(224,96,112,1)); }
 }
 
 /* ─────────────────────────────────────────────
