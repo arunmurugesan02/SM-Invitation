@@ -741,5 +741,24 @@
         <script src="js/Effects.js"></script>
         <script src="js/SongPlayer.js"></script>
         <script src="js/main.js"></script>
+
+        <!-- Firebase Analytics -->
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+
+            const firebaseConfig = {
+                apiKey: "AIzaSyC8UUKLkVVySsRwQ4NNcrhrYg1Qa7VmPlI",
+                authDomain: "sudarasan-mahi-invitation.firebaseapp.com",
+                projectId: "sudarasan-mahi-invitation",
+                storageBucket: "sudarasan-mahi-invitation.firebasestorage.app",
+                messagingSenderId: "785179990696",
+                appId: "1:785179990696:web:0cde0516e403bba1c3009d",
+                measurementId: "G-19KWHL97RL"
+            };
+
+            const app = initializeApp(firebaseConfig);
+            getAnalytics(app);
+        </script>
     </body>
 </html>
