@@ -216,6 +216,9 @@
 
     .family__center {
         padding-top: 0;
+        transform: none;
+        -webkit-transform: none;
+        overflow: visible;
     }
 
     .family__heart-icon {
