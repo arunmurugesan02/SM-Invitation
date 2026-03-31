@@ -587,6 +587,69 @@
     background: var(--gold-bg);
     border-radius: var(--radius-md);
     margin-bottom: var(--sp-2xl);
+    position: relative;
+}
+
+/* ── Story audio control bar ──────────────────────────────── */
+
+.story__audio-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-xs);
+    position: absolute;
+    top: var(--sp-sm);
+    right: var(--sp-sm);
+}
+
+.story__audio-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: var(--radius-full);
+    border: 1.5px solid var(--clr-gold);
+    background: var(--gold-bg);
+    color: var(--clr-gold);
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background var(--tr-base), transform var(--tr-base), box-shadow var(--tr-base);
+}
+
+.story__audio-btn:hover {
+    background: var(--gold-bg-hover);
+    box-shadow: 0 0 14px var(--gold-glow);
+    transform: scale(1.1);
+}
+
+.story__audio-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+/* Show only the relevant icon based on JS-set data-state */
+.story__audio-btn .icon-play,
+.story__audio-btn .icon-sound-on,
+.story__audio-btn .icon-sound-off {
+    display: none;
+}
+
+.story__audio-btn[data-state='idle']   .icon-play,
+.story__audio-btn[data-state='paused'] .icon-play    { display: block; }
+.story__audio-btn[data-state='playing'] .icon-sound-on  { display: block; }
+.story__audio-btn[data-state='muted']   .icon-sound-off { display: block; }
+
+/* Pulsing ring + scale when playing muted — prompts user to tap to unmute */
+.story__audio-btn.needs-unmute {
+    animation: audio-unmute-hint 1.2s ease-in-out infinite;
+    border-color: var(--clr-gold-light);
+    color: var(--clr-gold-light);
+}
+
+@keyframes audio-unmute-hint {
+    0%,  100% { box-shadow: 0 0 0 0px  rgba(212, 175, 55, 0.60); transform: scale(1);    }
+    50%        { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);    transform: scale(1.12); }
 }
 
 .story__chapters {
