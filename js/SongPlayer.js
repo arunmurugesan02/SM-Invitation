@@ -78,12 +78,16 @@
 
     btn.addEventListener('click', function () {
       if (audio.paused) {
+        // Audio may have failed to autoplay on Android — unmute + play together
+        // in the same user-gesture so both succeed in one tap
+        unmuted = true;
+        audio.muted = false;
         audio.play().catch(function () {});
         updateBtn();
         return;
       }
       if (!unmuted) {
-        // First tap: unmute and keep playing
+        // Playing muted (autoplay succeeded) — first tap unmutes
         unmuted = true;
         audio.muted = false;
       } else {
