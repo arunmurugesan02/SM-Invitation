@@ -62,7 +62,8 @@
             if (entry.isIntersecting) {
               // Muted play always succeeds — no browser blocks this
               audio.play().catch(function () {});
-            } else {
+            } else if (!unmuted) {
+              // Only pause on scroll-away before the user has interacted
               audio.pause();
             }
             updateBtn();
